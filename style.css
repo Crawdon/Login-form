@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   --color-primary: #009579;
   --color-primary-dark: #019176;
   --color-secondary: #3f22a7;
   --color-error: #b43030;
   --color-success: #2da848;
-  --border-radius: 4px;
+  --border-radius: 8px;
 
   margin: 0;
   height: 100vh;
@@ -18,10 +22,9 @@ body {
 .container {
   width: 400px;
   max-width: 400px;
-  min-width: 220px;
   margin: 1rem;
   padding: 2rem;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   border-radius: var(--border-radius);
   background-color: white;
 }
@@ -116,4 +119,24 @@ body {
 
 .form-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 300px) {
+  .container {
+    font-size: 12px;
+  }
+  .form-tittle {
+    margin-bottom: 1rem;
+  }
+  .form-input-group {
+    margin-bottom: 0.8rem;
+  }
+
+  .form-input {
+    padding: 0.6rem;
+  }
+
+  .form-button {
+    padding: 0.6rem 1.2rem;
+  }
 }
